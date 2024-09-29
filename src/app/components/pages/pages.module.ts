@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SharedModule } from '../shared/shared.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { CvComponent } from './cv/cv.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ProjectsComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    CvComponent
   ],
   imports: [
     CommonModule,

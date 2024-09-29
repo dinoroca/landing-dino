@@ -7,6 +7,7 @@
   --text-color: #ffffff;
   --text-color-secondary: #a1a1aa;
   --primary-color: #2dd4bf;
+  --topbar-sticky-bg: rgba(0,0,0,.3);
   --primary-color-text: #020617;
   --surface-0: #18181b;
   --surface-50: #27272a;
@@ -5128,9 +5129,9 @@
   .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
     color: #ffffff;
   }
-  .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-icon,
-.p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-submenu-icon {
-    color: #ffffff;
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-menuitem-icon,
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-submenu-icon {
+    color: var(--primary-color); /* Color del icono cuando está activo */
   }
   .p-menubar .p-menuitem > .p-menuitem-content {
     color: #ffffff;
@@ -5142,8 +5143,8 @@
     padding: 0.5rem 0.75rem;
     user-select: none;
   }
-  .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
-    color: #ffffff;
+  .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-menuitem-text {
+    color: var(--primary-color); /* Color del texto cuando está activo */
   }
   .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
     color: #71717a;

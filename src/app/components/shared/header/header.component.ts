@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
       },
       {
           label: 'Projects',
-          icon: 'pi pi-search',
+          icon: 'pi pi-hammer',
           routerLink: '/projects'
       },
       {

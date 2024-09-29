@@ -7,6 +7,7 @@
   --text-color: #334155;
   --text-color-secondary: #64748b;
   --primary-color: #14b8a6;
+  --topbar-sticky-bg: rgba(255,255,255,.7);
   --primary-color-text: #ffffff;
   --surface-0: #ffffff;
   --surface-50: #f8fafc;
@@ -5136,9 +5137,9 @@
   .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
     color: #334155;
   }
-  .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-icon,
-.p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-submenu-icon {
-    color: #334155;
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-menuitem-icon,
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-submenu-icon {
+    color: var(--primary-color); /* Color del icono cuando está activo */
   }
   .p-menubar .p-menuitem > .p-menuitem-content {
     color: #334155;
@@ -5150,8 +5151,8 @@
     padding: 0.5rem 0.75rem;
     user-select: none;
   }
-  .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
-    color: #334155;
+  .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link.p-menuitem-link-active .p-menuitem-text {
+    color: var(--primary-color); /* Color del texto cuando está activo */
   }
   .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
     color: #94a3b8;
@@ -5222,6 +5223,7 @@
       height: 1.75rem;
       color: #94a3b8;
       border-radius: 50%;
+      margin-left: 1rem;
       transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
     }
     .p-menubar .p-menubar-button:hover {
