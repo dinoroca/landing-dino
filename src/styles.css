@@ -1,1 +1,174 @@
 /* You can add global styles to this file, and also import other style files */
+/* Ysabeau */
+* {
+    font-family: 'LTMSans';
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Chaina', sans-serif;
+}
+
+::selection {
+    background-color: var(--highlight-bg);
+    color: var(--highlight-text-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(228, 228, 228);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(195, 195, 195);
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Titulos */
+@font-face {
+    font-family: 'Chaina';
+    src: url('../src/fonts/Chainalysis-Regular.ttf');
+    src: local('../src/fonts/Chainalysis-Regular'),
+        url('fonts/Chainalysis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chaina';
+    src: url('../src/fonts/Chainalysis-Bold.ttf');
+    src: local('../src/fonts/Chainalysis-Bold'),
+        url('fonts/Chainalysis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Todos los textos */
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-Regular.ttf');
+    src: local('../src/fonts/LatamSans-Regular'),
+        url('fonts/LatamSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-Bold.ttf');
+    src: local('../src/fonts/LatamSans-Bold'),
+        url('fonts/LatamSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-RegularItalic.ttf');
+    src: local('../src/fonts/LatamSans-RegularItalic'),
+        url('fonts/LatamSans-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-BoldItalic.ttf');
+    src: local('../src/fonts/LatamSans-BoldItalic'),
+        url('fonts/LatamSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-LightItalic.ttf');
+    src: local('../src/fonts/LatamSans-LightItalic'),
+        url('fonts/LatamSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LTMSans';
+    src: url('../src/fonts/LatamSans-Light.ttf');
+    src: local('../src/fonts/LatamSans-Light'),
+        url('fonts/LatamSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Negrita */
+.fw-bold {
+    font-weight: bold; /* Para negritas */
+}
+
+/* Ligera */
+.fw-light {
+    font-weight: 300; /* Para texto ligero */
+}
+
+/* Normal */
+.fw-normal {
+    font-weight: normal; /* Peso normal */
+}
+
+/* Texto en itálica */
+.font-italic {
+    font-style: italic; /* Estilo cursivo */
+}
+
+/* Negrita en itálica */
+.fw-bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Ligera en itálica */
+.fw-light-italic {
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Tamaño de texto */
+.text-small {
+    font-size: 0.875rem; /* Tamaño pequeño */
+}
+
+.text-large {
+    font-size: 1.25rem; /* Tamaño grande */
+}
+
+.text-extra-large {
+    font-size: 2rem; /* Tamaño extra grande */
+}
+
+/* Alineaciones de texto */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
