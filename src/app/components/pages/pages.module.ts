@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { CvComponent } from './cv/cv.component';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CvComponent } from './cv/cv.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ButtonModule
   ]
 })
 export class PagesModule { }

@@ -1,21 +1,45 @@
-<div class="card">
-  <p-menubar [model]="items">
+<style>
+  .fixed-header {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+    z-index: 1000;  /* Ajusta el color y la opacidad según tu diseño */
+  }
+
+  .blur{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .fixed-header .p-menubar {
+    border: none;
+    border-radius: 0;
+  }
+
+  /* Ajusta el padding-top del contenido principal para evitar que quede oculto detrás del header fijo */
+  .main-content {
+    padding-top: 70px; /* Ajusta este valor según la altura de tu header */
+  }
+</style>
+
+<div class="fixed-header">
+  <div class="card">
+    <p-menubar [model]="items" class="blur">
       <ng-template pTemplate="start">
         <i class="pi pi-spin pi-cog" style="font-size: 2rem"></i>
       </ng-template>
       <ng-template pTemplate="end" let-item let-root="root">
-          <a pRipple class="flex align-content-end flex-wrap p-menuitem-link"
-            routerLinkActive="active"
-            >
-              <span class="flex align-items-center" [class]="item.icon"></span>
-              <span class="ml-2 flex align-items-center">{{ item.label }}</span>
-          </a>
+        <a pRipple class="flex align-content-end flex-wrap p-menuitem-link"
+          routerLinkActive="active">
+          <span class="flex align-items-center" [class]="item.icon"></span>
+          <span class="ml-2 flex align-items-center">{{ item.label }}</span>
+        </a>
       </ng-template>
       <ng-template pTemplate="end">
         <p-button label="Ver Currículum" [routerLink]="['/cv']" />
-
-        <p-button [icon]="isDark ? 'pi pi-sun' : 'pi pi-moon'"  severity="secondary" class="ml-4" (click)="toggleTheme()" />
-
+        <p-button [icon]="isDark ? 'pi pi-sun' : 'pi pi-moon'" severity="secondary" class="ml-4" (click)="toggleTheme()" />
       </ng-template>
-  </p-menubar>
+    </p-menubar>
+  </div>
 </div>
