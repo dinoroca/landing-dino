@@ -1,18 +1,16 @@
 <app-header></app-header>
 
-<div class="flex justify-content-center align-items-center flex-wrap" style="min-height: 100vh">
+<div class="flex justify-content-center align-items-center flex-wrap" style="min-height: 90vh">
     <div class="col-10">
         <p class="text-primary text-xl fw-bold">Hola, mi nombre es</p>
 
-        <h1 style="font-size: 5rem" class="my-0">Dino Roca Laurente.</h1>
+        <h1 style="font-size: 4rem" class="my-0">Dino Roca Laurente.</h1>
         <h1 class="text-400 my-1">Desarrollo aplicaciones para la web.</h1>
 
         <div class="col-9 mb-5">
             <p>
-                Soy un desarrollador especializado en la creación y diseño de
-                experiencias digitales excepcionales. Actualmente, me centro en la
-                creación y desarrollo de aplicaciones web, atractivas, intuitivas y
-                accesibles en el
+                Soy un desarrollador web fullstack especializado en la creación y diseño de
+                experiencias digitales excepcionales. Actualmente, me centro en el desarrollo de aplicaciones web para el
                 <b class="text-primary">
                     <a href="https://www.selectagenetica.com/" target="_blank"
                         style="text-decoration: none; color: var(--primary-color)">
@@ -26,19 +24,18 @@
     </div>
 </div>
 
-<div class="flex justify-content-center align-items-center flex-wrap">
+<div class="flex justify-content-center align-items-center flex-wrap mb-5">
     <div class="col-10">
         <h1>Acerca de mí</h1>
 
         <div class="grid">
-            <div class="col-12 md:col-9">
+            <div class="col-12 md:col-9 lg:col-10">
                 <p>
-                    Mi nombre es Dino Roca y disfruto creando cosas que viven en Internet.
                     Mi interés por el desarrollo web comenzó en 2019, cuando decidí estudiar
                     la carrera de Ingeniería de Sistemas en la Universidad Nacional de San
                     Cristóbal de Huamanga (UNSCH). <br />
 
-                    Resulta que desarrollar proyectos como Hobby me ayudaron a conocer
+                    Empecé desarrollando proyectos como Hobby los cuales me ayudaron a conocer
                     muchas tecnologías que uso actualmente. He tenido el privilegio de
                     trabajar en proyectos personales, grupales, una empresa emergente y
                     actualmente me encuentro trabajando para el
@@ -54,27 +51,51 @@
                         </a>
                     </b>
                     donde ocupo el cargo de desarrollador web fullstack y desarrollamos
-                    aplicaciones a medida para las necesidades del grupo.
-
-                    <br>
+                    aplicaciones a medida para el grupo.
                 </p>
-
-                <h4>Estas son algunas de las tecnologías con las que trabajo:</h4>
-
-                <div class="flex justify-content-evenly flex-wrap py-5">
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/angular/FD31D1/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/typescript/3178C6/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/5FA04E/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/jsonwebtokens/000000/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/mongodb/47A248/white"/>
-                    <img height="32" width="32" src="https://cdn.simpleicons.org/digitalocean/0080FF/white"/>
-                </div>
-
             </div>
 
-            <div class="col-12 md:col-3 flex justify-content-center flex-wrap">
-                <p-image src="../../../../assets/imgs/profile.jpg" alt="Image" width="200" />
+            <div class="col-12 md:col-3 lg:col-2 flex justify-content-center flex-wrap">
+                <p-image src="../../../../assets/imgs/profile.jpg" alt="Image" width="100%" max-width="200px" />
+            </div>
+
+            <h4 class="col-12">Estas son algunas de las tecnologías con las que trabajo:</h4>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <p-card header="Frontend">
+                    <div class="flex justify-content-evenly flex-wrap py-3">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/angular/FD31D1/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/bootstrap/7952B3/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/primeng/DD0031/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/typescript/3178C6/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E/white" />
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <p-card header="Backend">
+                    <div class="flex justify-content-evenly flex-wrap py-3">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/5FA04E/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/jsonwebtokens/000000/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/express/black/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/mongoose/880000/white" />
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <p-card header="Server & Database">
+                    <div class="flex justify-content-evenly flex-wrap py-3">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/github/181717/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/mongodb/47A248/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/digitalocean/0080FF/white" />
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/googlecloud/4285F4/white" />
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="flex justify-content-evenly flex-wrap py-5">
             </div>
         </div>
     </div>

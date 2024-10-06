@@ -10,6 +10,8 @@ import { CvComponent } from './cv/cv.component';
 import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
 
+import { CardModule } from 'primeng/card';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ImageModule } from 'primeng/image';
     CommonModule,
     SharedModule,
     ButtonModule,
-    ImageModule
+    ImageModule,
+    CardModule
   ]
 })
 export class PagesModule { }

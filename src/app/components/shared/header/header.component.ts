@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
       },
       {
           label: 'Experience',
-          icon: 'pi pi-star',
+          icon: 'pi pi-folder-open',
           routerLink: '/experience'
       },
       {
