@@ -11,6 +11,10 @@ import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
 
 import { CardModule } from 'primeng/card';
+import { TimelineModule } from 'primeng/timeline';
+import { StepperModule } from 'primeng/stepper';
+import { FieldsetModule } from 'primeng/fieldset';
+import { GalleriaModule } from 'primeng/galleria';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { CardModule } from 'primeng/card';
     SharedModule,
     ButtonModule,
     ImageModule,
-    CardModule
+    CardModule,
+    TimelineModule,
+    StepperModule,
+    FieldsetModule,
+    GalleriaModule
   ]
 })
 export class PagesModule { }

@@ -1,3 +1,158 @@
-<app-header></app-header>
+<app-header />
 
-<p>experience works!</p>
+<div class="text-center mt-8">
+    <h2>Mi experiencia</h2>
+
+    <div class="card">
+        <p-stepper orientation="vertical">
+            <p-stepperPanel header="Selecta Genetica y Biotecnologia S.A.C.">
+                <ng-template pTemplate="content" let-nextCallback="nextCallback" let-index="index">
+                    <div class="flex flex-column h-auto">
+                        <div class="border-2 border-dashed surface-border border-round surface-ground font-medium px-3">
+                            <h3 class="text-center text-primary">Desarrollador Web FullStack</h3>
+                            <p class="fw-bold">19/04/2024 - Actualidad</p>
+
+                            <p class="text-left">
+                                Ocupo el cargo de Desarrollador FullStack, creando aplicaciones y plataformas
+                                personalizadas para el grupo empresarial. Mis tareas incluyen:
+                            </p>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Diseño y Desarrollo UX/UI" [toggleable]="true">
+                                    <p class="m-0">Prototipo de aplicaciones basado en requerimientos de usuario.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Maquetación y Responsive Design" [toggleable]="true">
+                                    <p class="m-0">Uso de Bootstrap y PrimeNG para diseño adaptativo.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Implementación de Angular" [toggleable]="true">
+                                    <p class="m-0">Desarrollo optimizado con componentes, servicios y guards.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Integración API" [toggleable]="true">
+                                    <p class="m-0">Conexión entre frontend y backend en proyectos colaborativos.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Desarrollo de APIs RESTful" [toggleable]="true">
+                                    <p class="m-0">Apoyo en el desarrollo del backend al equipo encargado usando el
+                                        framework NodeJs y Express.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Gestión de Bases de Datos" [toggleable]="true">
+                                    <p class="m-0">Diseño y creación de BBDD en SQL y MongoDB.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Autenticación y Autorización (JWT)" [toggleable]="true">
+                                    <p class="m-0">Uso la librería JWT para las autenticaciones, manejo de sesiones y
+                                        permisos.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <div class="card text-left mb-3">
+                                <p-fieldset legend="Despliegue y Mantenimiento de Servidores" [toggleable]="true">
+                                    <p class="m-0">Me encargo de desplegar las aplicaciones desarolladas a servidores
+                                        VPS de la compañía.</p>
+                                </p-fieldset>
+                            </div>
+
+                            <h4 class="text-left text-primary mb-0">Aplicaciones desarrolladas</h4>
+
+                            <div class="text-left grid">
+                                <div class="col-12 md:col-12 lg:col-6">
+                                    <p>
+                                        <a href="https://selectagenetica.com/" target="_blank">selectagenetica.com</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://agromarket.com.pe/" target="_blank">agromarket.com.pe</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://workingprime.com/" target="_blank">workingprime.com</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://agroplus.com.pe/" target="_blank">agroplus.com.pe</a>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 md:col-12 lg:col-6">
+                                    <div class="card">
+                                        <p-galleria [value]="images" [showIndicators]="true" [showThumbnails]="false"
+                                            [changeItemOnIndicatorHover]="true" [responsiveOptions]="responsiveOptions"
+                                            [containerStyle]="{ 'max-width': '640px' }">
+                                            <ng-template pTemplate="item" let-item>
+                                                <img [src]="item.itemImageSrc" width="100%" height="100%"
+                                                    style="display: block;" />
+                                            </ng-template>
+                                        </p-galleria>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-12 md:col-6 lg:col-3">
+                                    <p-image src="../../../../assets/imgs/selectagenetica.png" alt="Image" width="100%" height="100%" />
+                                </div>
+
+                                <div class="col-12 md:col-6 lg:col-3">
+                                    <p-image src="../../../../assets/imgs/wkp.png" alt="Image" width="100%" height="100%" />
+                                </div>
+
+                                <div class="col-12 md:col-6 lg:col-3">
+                                    <p-image src="../../../../assets/imgs/agp.png" alt="Image" width="100%" height="100%" />
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </ng-template>
+            </p-stepperPanel>
+            <p-stepperPanel header="Municipalidad Distrital de Villa Virgen">
+                <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback"
+                    let-index="index">
+                    <div class="flex flex-column h-auto">
+                        <div class="border-2 border-dashed surface-border border-round surface-ground font-medium px-3">
+
+                            <h3 class="text-center text-primary">Auxiliar Catastral</h3>
+                            <p class="fw-bold">01/10/2023 - 31/12/2023</p>
+
+                            <p class="text-left">
+                                En esta entidad apoyé en las tareas de delimitación de terrenos, levantamientos
+                                topográficos, llenado de fichas catastrales y digitalización de los planos medidos en
+                                campo mediante programas como AutoCAD, Civil3D y Revit. La finalidad del trabajo fue
+                                colaborar con la entidad para el desarrollo adecuado
+                                y ordenado de centro urbano.
+                            </p>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-stepperPanel>
+            <p-stepperPanel header="HJM Tecnología & Soporte S.A.C.">
+                <ng-template pTemplate="content" let-prevCallback="prevCallback" let-index="index">
+                    <div class="flex flex-column h-auto">
+                        <div class="border-2 border-dashed surface-border border-round surface-ground font-medium px-3">
+
+                            <h3 class="text-center text-primary">Desarrollador Web FullStack</h3>
+                            <p class="fw-bold">01/06/2023 - 30/09/2023</p>
+
+                            <p class="text-left">
+                                En esta empresa realicé las prácticas pre-profesionales exigidas por mi universidad para
+                                ser considerado como egregasado, en esta empresa logré desarrollar una aplicación web de
+                                comercio electrónico para ayudar a la empresa a incursionar en el mundo del ecommerce.
+                            </p>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-stepperPanel>
+        </p-stepper>
+    </div>
+</div>

@@ -180,6 +180,11 @@
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
+
+img {
+  border-radius: 6px;
+}
+
 .p-editor-container .p-editor-toolbar.ql-snow {
   border: 1px solid #3f3f46;
 }

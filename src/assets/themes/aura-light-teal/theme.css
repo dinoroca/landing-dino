@@ -183,6 +183,10 @@
   color: white; /* Cambia el color del texto si es necesario */
 }
 
+img {
+  border-radius: 6px;
+}
+
 .p-editor-container .p-editor-toolbar {
   background: #ffffff;
   border-top-right-radius: 6px;
