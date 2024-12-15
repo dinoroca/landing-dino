@@ -1,2 +1,48 @@
-<app-header></app-header>
-<p>projects works!</p>
+<app-header />
+
+<div class="text-center mt-8">
+  <h2>Mis proyectos</h2>
+
+  <div class="card">
+    <p-panel [toggleable]="true">
+      <ng-template pTemplate="header">
+        <div class="flex items-center gap-1">
+          <a href="https://tugrass.com" target="_blank" class="no-underline">
+            <h3 class="font-bold my-1">tugrass.com</h3>
+          </a>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img height="24" width="24" src="https://cdn.simpleicons.org/angular/FD31D1/white" pTooltip="Angular"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/tailwindcss/06B6D4/white"
+              pTooltip="Tailwindcss" tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/nodedotjs/5FA04E/white" pTooltip="Node.js"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/express/black/white" pTooltip="Express"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/mongoose/880000/white" pTooltip="Mongoose"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/mongodb/47A248/white" pTooltip="MongoDB"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/nginx/009639/white" pTooltip="Nginx proxy"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/letsencrypt/003A70/white"
+              pTooltip="Let's encrypt" tooltipPosition="bottom" />
+          </div>
+        </div>
+      </ng-template>
+
+      <p class="mb-4 text-left flex items-center">
+        Tugrass.com es una plataforma cuya finalidad es ser un puente entre los amantes del deporte y las canchas que
+        ofrecen sus servicios, se desarrolló con la principal idea de modernizar la forma de reservar y gestionar las
+        canchas deportivas. El desarrollo de esta plataforma surge como una solución al problema que afrontan muchas
+        instalaciones deportivas en gestionar sus reservas y asimismo clientes que se didifucltan en encontrar una
+        cancha perfecta para practicar sus deportes favoritos.
+      </p>
+      <p-image src="../../../../assets/imgs/tugrass.png" alt="Image" width="300"/>
+    </p-panel>
+  </div>
+</div>

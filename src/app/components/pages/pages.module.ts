@@ -15,6 +15,10 @@ import { TimelineModule } from 'primeng/timeline';
 import { StepperModule } from 'primeng/stepper';
 import { FieldsetModule } from 'primeng/fieldset';
 import { GalleriaModule } from 'primeng/galleria';
+import { PanelModule } from 'primeng/panel';
+import { MenuModule } from 'primeng/menu';
+import { ChipModule } from 'primeng/chip';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 @NgModule({
@@ -34,7 +38,11 @@ import { GalleriaModule } from 'primeng/galleria';
     TimelineModule,
     StepperModule,
     FieldsetModule,
-    GalleriaModule
+    GalleriaModule,
+    PanelModule,
+    MenuModule,
+    ChipModule,
+    TooltipModule
   ]
 })
 export class PagesModule { }
