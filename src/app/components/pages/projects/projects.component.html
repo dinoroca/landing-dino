@@ -1,7 +1,7 @@
 <app-header />
 
-<div class="text-center mt-8">
-  <h2>Mis proyectos</h2>
+<div class="text-center my-8">
+  <h2>Mis proyectos personales</h2>
 
   <div class="card">
     <p-panel [toggleable]="true">
@@ -31,6 +31,8 @@
               tooltipPosition="bottom" />
             <img height="24" width="24" src="https://cdn.simpleicons.org/letsencrypt/003A70/white"
               pTooltip="Let's encrypt" tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/github/181717/white" pTooltip="Github"
+              tooltipPosition="bottom" />
           </div>
         </div>
       </ng-template>
@@ -42,7 +44,43 @@
         instalaciones deportivas en gestionar sus reservas y asimismo clientes que se didifucltan en encontrar una
         cancha perfecta para practicar sus deportes favoritos.
       </p>
-      <p-image src="../../../../assets/imgs/tugrass.png" alt="Image" width="300"/>
+      <p-image src="../../../../assets/imgs/tugrass.png" alt="Image" width="350" [preview]="true" />
+    </p-panel>
+  </div>
+
+  <div class="card mt-5">
+    <p-panel [toggleable]="true">
+      <ng-template pTemplate="header">
+        <div class="flex items-center gap-1">
+          <a href="https://proyecto-estadistica2.netlify.app/#/inicio/home-medias" target="_blank" class="no-underline">
+            <h3 class="font-bold my-1">Simulador de inferencia estadística</h3>
+          </a>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img height="24" width="24" src="https://cdn.simpleicons.org/angular/FD31D1/white" pTooltip="Angular"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/bootstrap/7952B3/white" pTooltip="Bootstrap"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/netlify/00C7B7/white" pTooltip="Netlify"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/latex/008080/white" pTooltip="LaTeX"
+              tooltipPosition="bottom" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/github/181717/white" pTooltip="Github"
+              tooltipPosition="bottom" />
+          </div>
+        </div>
+      </ng-template>
+
+      <p class="mb-4 text-left flex items-center">
+        Este trabajo se desarrolló para el curso de Inferencia Estadídistica (ES-244), con la finalidad de ayudar a los
+        estudiantes que no tienen claro qué tipo de distribución utilizar en un ejercicio dado, el proyecto proporciona
+        una interfaz intuitiva para la fácil utilización, asimismo, se incluyó una parte teórica de inferencia
+        estadídistica, un formulario y las tablas de probabilidad.
+      </p>
+      <p-image src="../../../../assets/imgs/estadistica.png" alt="Image" width="350" [preview]="true" />
     </p-panel>
   </div>
 </div>
