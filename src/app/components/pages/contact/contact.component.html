@@ -1,15 +1,65 @@
-<app-header />
+<app-header></app-header>
 
 <div class="my-8">
-  <h2 class="text-center ">Contáctame!</h2>
+  <h2 class="text-center text-4xl font-bold mb-4">¡Contáctame!</h2>
 
-  <p>
-
+  <p class="text-center mb-6 max-w-2xl mx-auto">
+    Estoy aquí para ayudarte. Elige la forma de contacto que prefieras y conversemos sobre tu próximo proyecto.
   </p>
 
-  <p-card header="Simple Card">
-    <p class="m-0">
-        Lorem ipsum dolor sit amet...
-    </p>
-</p-card>
+  <p-card header="Formas de Contacto" styleClass="max-w-2xl mx-auto shadow-lg">
+    <div class="space-y-4">
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/dino-roca/" target="_blank"
+        class="flex items-center p-4 rounded-lg no-underline">
+        <i class="pi pi-linkedin text-2xl text-blue-500 mr-4" style="text-decoration: none;"></i>
+        <div class="flex-1">
+          <div class="font-semibold text-lg text-blue-500">LinkedIn</div>
+          <div class="text-sm text-gray-400">Conectemos profesionalmente</div>
+        </div>
+        <i class="pi pi-external-link text-gray-400"></i>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:dino.roca.27@unsch.edu.pe"
+        class="flex items-center p-4 rounded-lg no-underline">
+        <i class="pi pi-envelope text-2xl text-red-500 mr-4"></i>
+        <div class="flex-1">
+          <div class="font-semibold text-lg text-red-500">Correo Electrónico</div>
+          <div class="text-sm text-gray-400">dino.roca.27&#64;unsch.edu.pe</div>
+        </div>
+        <i class="pi pi-send text-gray-400"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/51900535740?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20un%20proyecto." target="_blank"
+        class="flex items-center p-4 rounded-lg no-underline">
+        <i class="pi pi-whatsapp text-2xl text-green-500 mr-4"></i>
+        <div class="flex-1">
+          <div class="font-semibold text-lg text-green-500">WhatsApp</div>
+          <div class="text-sm text-gray-400">+51 900 535 740</div>
+        </div>
+        <i class="pi pi-external-link text-gray-400"></i>
+      </a>
+
+      <!-- Teléfono -->
+      <a href="tel:+51900535740"
+        class="flex items-center p-4 rounded-lg no-underline">
+        <i class="pi pi-phone text-2xl text-gray-500 mr-4"></i>
+        <div class="flex-1">
+          <div class="font-semibold text-lg text-gray-500">Llamada Telefónica</div>
+          <div class="text-gray-400 text-sm">+51 900 535 740</div>
+        </div>
+        <i class="pi pi-phone text-gray-400"></i>
+      </a>
+
+    </div>
+
+    <div class="text-center pt-4 border-t border-gray-200">
+      <p class="text-sm">
+        <i class="pi pi-heart text-red-500 mr-2"></i> Respondo rápidamente a todos los mensajes
+      </p>
+    </div>
+  </p-card>
 </div>
